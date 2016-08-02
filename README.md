@@ -49,7 +49,7 @@ To check TensorFlow, you can start a TensorFlow docker image by
 running this:
 
 ```
-docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow bash
+docker run -it -p 8888:8888 tensorflow/tensorflow:0.10.0rc0 bash
 ```
 
 Check to see if your TensorFlow works by invoking Python from the container’s command line (you’ll see `root@xxxxxxx#`):
@@ -118,7 +118,7 @@ SSH keys and an IP address.
 Once you see an ASCII whale in the newly-opened terminal, run this command:
 
 ```
-docker run -it gcr.io/tensorflow/tensorflow:latest bash
+docker run -it tensorflow/tensorflow:0.10.0rc0 bash
 ```
 
 Check to see if your TensorFlow works by invoking Python from the container’s command line (you’ll see `root@xxxxxxx#`):
@@ -178,7 +178,7 @@ Go to where you cloned the repository (we're assuming `$HOME`):
 
 ```
 cd $HOME
-docker run  -v $HOME/tensorflow-tutorial:/tutorial -p 0.0.0.0:6006:6006 -p 0.0.0.0:8888:8888 -it gcr.io/tensorflow/tensorflow:latest bash
+docker run  -v $HOME/tensorflow-tutorial:/tutorial -p 0.0.0.0:6006:6006 -p 0.0.0.0:8888:8888 -it tensorflow/tensorflow:0.10.0rc0 bash
 ```
 
 This will start a Docker instance with the tutorial materials mounted
