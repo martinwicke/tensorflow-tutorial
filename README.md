@@ -110,7 +110,7 @@ docker-machine create --driver virtualbox default
 On OS X, if you have not already, run the Docker Quickstart Terminal,
 usually found in `/Applications/Docker`, and which looks like this:
 
-[image]
+![Quickstart Terminal Icon](images/quickstart-icon.png)
 
 There will be a long pause as the Docker container starts and gets an
 SSH keys and an IP address.
@@ -209,11 +209,15 @@ tensorboard --logdir=`pwd` &
 
 * [http://192.168.100.99:8888](http://192.168.100.99:8888)
 
-
 or whichever local address your VM has on your machine.
 
 TensorBoard is available in a similar place, either
 [http://192.168.100.99:6006](http://192.168.100.99:6006) on Mac or [http://localhost:6006](http://localhost:6006)
+
+On OS X, you can find the exact address under the whale where you
+started your terminal:
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 ## When You're Done
 
