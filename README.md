@@ -52,7 +52,7 @@ running this:
 docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow bash
 ```
 
-Check to see if your TensorFlow works by invoking Python from the container’s command line (you’ll see “root@xxxxxxx#”):
+Check to see if your TensorFlow works by invoking Python from the container’s command line (you’ll see `root@xxxxxxx#`):
 
 ```
 # python
@@ -121,7 +121,7 @@ Once you see an ASCII whale in the newly-opened terminal, run this command:
 docker run -it gcr.io/tensorflow/tensorflow:latest bash
 ```
 
-Check to see if your TensorFlow works by invoking Python from the container’s command line (you’ll see “root@xxxxxxx#”):
+Check to see if your TensorFlow works by invoking Python from the container’s command line (you’ll see `root@xxxxxxx#`):
 
 ```
 # python
@@ -184,15 +184,10 @@ docker run  -v $HOME/tensorflow-tutorial:/tutorial -p 0.0.0.0:6006:6006 -p 0.0.0
 This will start a Docker instance with the tutorial materials mounted
 at `/tutorial`.
 
-This docker image doesn't include PIL for rendering, so we will need
-to add this now.  (Note: All further commands are run in the Docker
-image, so your prompt will be `root@[something]#`).
+*(Note: All further commands are run in the Docker
+image, so your prompt will be `root@[something]#`).*
 
-#```
-#pip install Pillow
-#```
-
-Once started, run `jupyter` in the right directory.
+Once started, run the Jupyter server in the right directory.
 
 ```
 cd /tutorial
@@ -207,16 +202,13 @@ tensorboard --logdir=`pwd` &
 
 **On Linux**:  You can navigate to:
 
-```
-[http://localhost:8888](http://localhost:8888)
-```
+* [http://localhost:8888](http://localhost:8888)
 
 
 **On OSX:** You can navigate to:
 
-```
-[http://192.168.100.99:8888](http://192.168.100.99:8888)
-```
+* [http://192.168.100.99:8888](http://192.168.100.99:8888)
+
 
 or whichever local address your VM has on your machine.
 
