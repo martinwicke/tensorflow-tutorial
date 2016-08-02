@@ -8,24 +8,21 @@ This codelab contains three lessons:
 * Deepdream
 
 These are all presented via [Jupyter](jupyter.org) notebooks.  To run
-them on your local machines, you will need to set up [Docker](docker.org) on your
-machine. 
+them on your machine, you will need a working TensorFlow installation (v0.10.0RC0). 
 
-Note: If you already have Docker installed or are running natively
-
+Below are instructions on how to set up a TensorFlow environment using Docker. 
 
 ## Setup
 
-For this tutorial, we'll use Docker, which runs your notebooks from a
-virtual machine.  Docker images already contain installed and compiled
-versions of TensorFlow.
+Docker runs your notebooks from a virtual machine.  Docker images already contain 
+installed and compiled versions of TensorFlow.
 
-Note: it’s quite possible to install TensorFlow natively on your
-machine (and recommended for long-term experimentation), but for
-simplicity we have docmented the Docker procedure here.
+Note: it’s quite possible to [install TensorFlow natively](https://tensorflow.org/get_started/os_setup.html) on your
+machine (and this is recommended for long-term experimentation), but for
+simplicity we have docmented only the Docker procedure here.
 
 Prerequisites:
-* A Mac or Ubuntu Linux machine
+* A Mac or Ubuntu Linux machine (Docker will work on Windows, but the step-by-step instructions here may not work perfectly since we have not tried them)
 * Some knowledge of Python
 
 ### Ubuntu Linux
@@ -211,8 +208,8 @@ tensorboard --logdir=`pwd` &
 
 or whichever local address your VM has on your machine.
 
-TensorBoard is available in a similar place, either
-[http://192.168.100.99:6006](http://192.168.100.99:6006) on Mac or [http://localhost:6006](http://localhost:6006)
+TensorBoard is available in a similar place, either [http://localhost:6006](http://localhost:6006) or
+[http://192.168.100.99:6006](http://192.168.100.99:6006) on MacOS.
 
 On OS X, you can find the exact address under the whale where you
 started your terminal, shown here:
