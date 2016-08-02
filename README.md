@@ -215,9 +215,9 @@ TensorBoard is available in a similar place, either
 [http://192.168.100.99:6006](http://192.168.100.99:6006) on Mac or [http://localhost:6006](http://localhost:6006)
 
 On OS X, you can find the exact address under the whale where you
-started your terminal:
+started your terminal, shown here:
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Docker whale image](images/docker-whale.png)
 
 ## When You're Done
 
