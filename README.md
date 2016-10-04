@@ -4,7 +4,7 @@
 This codelab contains three lessons:
 
 * Introduction to TensorFlow with Linear Regression
-* MINST with Deep Learning
+* MNIST with Deep Learning
 * Deepdream
 
 These are all presented via [Jupyter](jupyter.org) notebooks.  To run
